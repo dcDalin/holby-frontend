@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700&display=swap');
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: rgba(236, 240, 241, 0.7);
+}
+
+.bg-holby-red {
+  background-color: #c23616 !important;
+}
+
+.holby-white {
+  color: rgba(236, 240, 241, 0.7) !important;
+}
+
+.holby-white:hover {
+  color: rgba(236, 240, 241, 1) !important;
+}
+
+.custom-app-title {
+  letter-spacing: 1px;
+  color: rgba(236, 240, 241, 0.7) !important;
+}
+
+.custom-app-title:hover {
+  color: rgba(236, 240, 241, 1) !important;
+}
+
+.custom-some-margin {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.custom-top-social-links {
+  margin: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.custom-carousel {
+  height: 500px !important;
+  object-fit: cover !important;
+  filter: brightness(40%);
+}
+
+.custom-section-margin-top {
+  margin-top: 100px;
+}
+
+/* Courses Carousel starts here */
+.slider {
+  margin: 10px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+}
+
+/* Courses Carousel ends here */
+
+.custom-courses-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.custom-ad-section {
+  background-color: green;
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+
+.section-courses {
+  background: #2ecc71;
+}
+
+.custom-card-body {}
+
+.custom-courses-card {
+  border: none !important;
+}
+
+.custom-testimonial-img {
+  padding-top: 10px !important;
+}
+
+/* 
+
+  ********************************************************
+    Screen Break Points
+
+    Starts Here 
+  ********************************************************
+
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+  .custom-top-social-links {
+    display: none !important;
+  }
+
+  .custom-carousel {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 766px) {
+  .custom-top-social-links {
+    display: none !important;
+  }
+
+  .custom-carousel {
+    height: 300px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .custom-top-social-links {
+    display: none !important;
+  }
+
+  .custom-app-title {
+    display: none;
+  }
+
+  .custom-carousel {
+    height: 400px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
