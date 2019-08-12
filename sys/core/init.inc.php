@@ -5,7 +5,7 @@
 
 	/* Getting root directory of the site */
 	// Change Dev!!!
-	$siteDirectory = 'holby';
+	include 'site.directory.php';
 	// $siteDirectory = 'holby';
 	define('SCHOOL_ROOT', $_SERVER["DOCUMENT_ROOT"]."/$siteDirectory/");
 
