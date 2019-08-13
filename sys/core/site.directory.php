@@ -1,4 +1,4 @@
 
 <?php
-$siteDirectory = '';
+$siteDirectory = 'holbytrainingsolution';
 ?>

@@ -13,7 +13,7 @@
     </button>
 
     <div class="collapse navbar-collapse " id="main_navbar_collapse">
-      <a class="navbar-brand">
+      <a class="navbar-brand" href="index">
         <img src="img/logo.png" height="50" />
         <span class="custom-app-title">Holby Training Solutions</span>
       </a>
@@ -48,7 +48,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link holby-white" href="#">Blog</a>
+          <a class="nav-link holby-white" href="blog">Blog</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle holby-white" data-toggle="dropdown" data-target="dropdown_media" href="#">

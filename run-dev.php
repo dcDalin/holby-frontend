@@ -1,4 +1,5 @@
 <?php
+// php run-dev.php
 // Set Site Directory to development
 $siteDirectory = fopen("sys/core/site.directory.php", "w") or die("Unable to open site dir!");
 $siteScript = "
