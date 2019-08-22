@@ -1,3 +1,11 @@
+<?php
+  $results = $common -> GetRows("SELECT * FROM tbl_testimonials");
+  $total_rows = $common -> CCGetDBValue("SELECT COUNT(*) FROM tbl_testimonials");
+
+  if($total_rows < 1){
+    echo 'No testimonials to show';
+  }else {
+    ?>
 <section class="testimonial-section2 custom-section-margin-top">
   <div class="row text-center">
     <div class="col-12">
@@ -12,58 +20,43 @@
       <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
       <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
       <ul id="testim-dots" class="dots">
-        <li class="dot active"></li>
-        <!--
-                    -->
-        <li class="dot"></li>
-        <!--
-                    -->
-        <li class="dot"></li>
-        <!--
-                    -->
-        <li class="dot"></li>
-        <!--
-                    -->
-        <li class="dot"></li>
+        <?php 
+      $i = 1;
+      foreach ($results as $row) {
+        $class = ( $i === 1 ) ? 'dot active' : 'dot';
+          ?>
+        <li class="<?php echo $class; ?>"></li>
+        <?php
+        $i ++;
+      }
+    ?>
+
       </ul>
       <div id="testim-content" class="cont">
-        <div class="active">
-          <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
-          <div class="h4">Kellie</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
+        <?php
+      $j = 1;
+      foreach($results as $roww) {
+        $image = $roww['image'];
+        $name = $roww['name'];
+        $testimonial = $roww['testimonial'];
 
-        <div>
-          <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
-          <div class="h4">Jessica</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
+        $classs = ($j === 1) ? 'active' : '';
 
-        <div>
-          <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
-          <div class="h4">Kellie</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        ?>
+        <div class="<?php echo $classs; ?>">
+          <div class="img"><img src="<?php echo $ADMIN_URL; ?>/uploads/testimonial_images/<?php echo $image; ?>" alt="">
+          </div>
+          <div class="h4"><?php echo $name; ?></div>
+          <p><?php echo $testimonial; ?></p>
         </div>
-
-        <div>
-          <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
-          <div class="h4">Jessica</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-
-        <div>
-          <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
-          <div class="h4">Kellie</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-
+        <?php
+      }
+        ?>
       </div>
     </div>
   </div>
   <!--         </div> -->
 </section>
+<?php
+  }
+?>
