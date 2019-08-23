@@ -16,72 +16,9 @@
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <section class="regular slider">
-          <div class="card custom-courses-card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body custom-card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://placehold.it/350x300?text=1" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            </div>
-          </div>
-
-        </section>
-
-      </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-        ullam distinctio incidunt delectus provident quos, enim quaerat
-        possimus atque consequuntur libero suscipit id in eaque omnis veniam
-        placeat. Vero, illum!
-      </div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-        ullam distinctio incidunt delectus provident quos, enim quaerat
-        possimus atque consequuntur libero suscipit id in eaque omnis veniam
-        placeat. Vero, illum!
-      </div>
+      <?php include 'course-bronze.php'; ?>
+      <?php include 'course-silver.php'; ?>
+      <?php include 'course-gold.php'; ?>
     </div>
   </div>
 </section>

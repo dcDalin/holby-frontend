@@ -141,6 +141,25 @@ body {
   font-size: 20px;
 }
 
+/* bootstrap hack for course slider end */
+.tab-content>.tab-pane,
+.pill-content>.pill-pane {
+  display: block;
+  /* undo display:none          */
+  height: 0;
+  /* height:0 is also invisible */
+  overflow-y: hidden;
+  /* no-overflow                */
+}
+
+.tab-content>.active,
+.pill-content>.active {
+  height: auto;
+  /* let the content decide it  */
+  overflow-y: visible;
+}
+
+/* bootstrap hack end */
 
 /* 
 

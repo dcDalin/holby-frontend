@@ -52,13 +52,29 @@
   <script src="./assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
   $(document).on('ready', function() {
+    function slickInit() {
+      $("#bronze-slider").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
 
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1
-    });
+      $("#silver-slider").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+
+      $("#gold-slider").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+    }
+    slickInit();
 
     $(".testimonials").slick({
       dots: true,
