@@ -33,7 +33,7 @@
         ?>
     <div class="">
       <div class="card card-inverse card-primary ">
-        <img class="card-img-top" src="https://picsum.photos/200/150/?random">
+        <img class="card-img-top" src="<?php echo $ADMIN_URL; ?>/uploads/course_thumbnails/<?php echo $thumbnail; ?>">
         <blockquote class="card-blockquote p-3">
           <p><?php echo $title; ?></p>
           <footer>
