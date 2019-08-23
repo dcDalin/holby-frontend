@@ -4,33 +4,33 @@
       <div class="col-xs-12 col-sm-4 col-md-4">
         <h5>Quick links</h5>
         <ul class="list-unstyled quick-links">
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          <li><a href="javascript:void();"></i>Home</a></li>
+          <li><a href="javascript:void();"></i>About</a></li>
+          <li><a href="javascript:void();"></i>Products</a></li>
+          <li><a href="javascript:void();"></i>Services</a></li>
+          <li><a href="javascript:void();"></i>Blogs</a></li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <h5>Quick links</h5>
-        <ul class="list-unstyled quick-links">
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <h5>Quick links</h5>
-        <ul class="list-unstyled quick-links">
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-          <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i
-                class="fa fa-angle-double-right"></i>Imprint</a></li>
-        </ul>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <h5>Drop us a message</h5>
+        <form>
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6">
+              <label for="formGroupExampleInput" class="custom-contact-form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your name">
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-6">
+              <label for="formGroupExampleInput" class="custom-contact-form-label">Email</label>
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="custom-contact-form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg">Send Message</button>
+        </form>
       </div>
     </div>
     <div class="row">
@@ -48,10 +48,8 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-        <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered
-          MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-        <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
-            target="_blank">Sunlimetech</a></p>
+        <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="http://holbytrainingsolution.co.ke"
+            target="_blank">Holby Training Solutions</a></p>
       </div>
       <hr>
     </div>

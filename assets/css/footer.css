@@ -15,11 +15,13 @@ section .section-title {
   border-left: 3px solid #eeeeee;
   padding-bottom: 6px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: rgba(236, 240, 241, 0.7) !important;
+  ;
 }
 
 #footer a {
-  color: #ffffff;
+  color: rgba(236, 240, 241, 0.7) !important;
+  ;
   text-decoration: none !important;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -44,7 +46,8 @@ section .section-title {
 
 #footer ul.social li a,
 #footer ul.quick-links li a {
-  color: #ffffff;
+  color: rgba(236, 240, 241, 0.7) !important;
+  ;
 }
 
 #footer ul.social li a:hover {
@@ -79,4 +82,9 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+}
+
+.custom-contact-form-label {
+  color: rgba(236, 240, 241, 0.7) !important;
+  font-weight: bold !important;
 }
