@@ -48,7 +48,7 @@
             AND
               tbl_blog.isActive='Y'
           ");
-          $total_rows = $common -> CCGetDBValue("SELECT COUNT(*) FROM tbl_blog ");
+          $total_rows = $common -> CCGetDBValue("SELECT COUNT(*) FROM tbl_blog");
 
           if($total_rows < 1){
             ?>
