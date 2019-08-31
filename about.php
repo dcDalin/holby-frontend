@@ -25,6 +25,15 @@
   <link rel="stylesheet" href="assets/css/custom.css" />
   <link rel="stylesheet" href="assets/css/carousel.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/meettheteam.css" />
+  <style>
+  .custom-meet-the-team {
+    position: relative;
+    background-color: #e91c5e;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  </style>
   <title>About | <?php echo $SystemName; ?> </title>
 </head>
 
@@ -40,9 +49,8 @@
       echo $text;
     ?>
   </section>
-  <section class="container custom-section-margin-top">
-    <h2>Meet the Team</h2>
-  </section>
+
+  <?php include 'inc/meet-the-team.php'; ?>
   <?php include 'inc/partners.php'; ?>
   <?php include 'inc/footer.php'; ?>
 
