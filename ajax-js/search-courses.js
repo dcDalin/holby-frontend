@@ -63,9 +63,6 @@ $("document").ready(function() {
           if (data.status === "success") {
             $("#errorDiv")
               .slideDown("fast", function() {
-                $("#errorDiv").html(
-                  '<div class="alert alert-success">' + data.message + "</div>"
-                );
                 $("#search-courses-form").trigger("reset");
                 $("input, textarea").prop("disabled", false);
                 $("#search-results").prop("disabled", false);
@@ -77,6 +74,7 @@ $("document").ready(function() {
               .html("Search")
               .prop("disabled", false);
             $("#btn-delete-blog").prop("disabled", false);
+            $("#search-results").html(data.output);
           } else {
             $("#errorDiv")
               .slideDown("fast", function() {
@@ -93,6 +91,7 @@ $("document").ready(function() {
               .prop("disabled", false);
             $("#btn-delete-blog").prop("disabled", false);
             $("#blogBodyWrapper").slideDown("fast");
+            $("#search-results").html(data.message);
           }
         }, 3000);
       })

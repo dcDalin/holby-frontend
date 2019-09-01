@@ -95,14 +95,7 @@
     </div>
 
     <div class="card-columns" id="search-results">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
+
     </div>
   </section>
 
@@ -120,7 +113,20 @@
 
   <script type="text/javascript" src="assets/js/jquery-validate.js"></script>
   <script type="text/javascript" src="ajax-js/search-courses.js"></script>
+  <script>
+  $(window).on("load", function() {
+    $.ajax({
+      type: 'GET',
+      url: 'ajax/search-courses-ajax.php',
+      data: $("#search-courses-form").serialize(),
+      dataType: "json",
 
+      success: function(data) {
+        $("#search-results").html(data.output);
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>
