@@ -28,10 +28,8 @@
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdown_products">
-            <a class="dropdown-item">Something</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item">Something</a>
-            <a class="dropdown-item">Something</a>
+            <a href="courses" class="dropdown-item">Individual Courses</a>
+            <a href="courses" class="dropdown-item">Organizational Courses</a>
           </div>
         </li>
         <li class="nav-item dropdown">
