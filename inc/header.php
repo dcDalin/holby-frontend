@@ -39,10 +39,8 @@
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdown_services">
-            <a class="dropdown-item">Something</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item">Something</a>
-            <a class="dropdown-item">Something</a>
+            <a class="dropdown-item">Consultancy</a>
+            <a class="dropdown-item">Executive Coaching</a>
           </div>
         </li>
         <li class="nav-item">
@@ -69,9 +67,10 @@
             Account
             <span class="caret"></span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdown_account">
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown_account">
             <a class="dropdown-item">Login</a>
-            <a class="dropdown-item">Signup</a>
+            <a href="signup-individual" class="dropdown-item">Register as individual</a>
+            <a href="signup-organization" class="dropdown-item">Register as organization</a>
           </div>
         </li>
       </ul>
