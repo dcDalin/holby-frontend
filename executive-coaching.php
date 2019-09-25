@@ -9,6 +9,15 @@
 	include_once('sys/core/init.inc.php');
   $common = new common();
   include_once('env-variables.php');
+
+  $id = 1;
+  $result = $common -> GetRows("
+    SELECT * FROM tbl_executive_coaching_description WHERE id='".$id."'
+  ");
+
+  foreach($result as $row){
+    $description = $row['description'];
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +31,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/custom.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
-  <title>Signup | <?php echo $SystemName; ?> </title>
+  <title>Executive Coaching | <?php echo $SystemName; ?> </title>
   <style>
   .form-heading {
     color: #fff;
@@ -115,43 +124,23 @@
 <body>
   <?php include 'inc/header.php'; ?>
   <div class="container">
+
     <div class="login-form custom-section-margin-top">
+      <p><?php echo $description; ?></p>
       <div class="main-div">
         <div class="panel">
-          <h2>Login</h2>
+          <h2>Executive Coaching</h2>
         </div>
         <br>
         <form method="post" id="form">
           <div id="errorDiv">
             <!-- error will be shown here ! -->
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
-              <span class="help-block" id="error"></span>
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-              <span class="help-block" id="error"></span>
-            </div>
-
-          </div>
-          <div class="forgot">
-            <a href="reset.html">Forgot password?</a>
-          </div>
-          <button type="submit" name="btn-submit" id="btn-submit" class="btn btn-primary">Login</button>
 
         </form>
       </div>
-      <div class="form-footer">
-        Don't have an account?
-        <a href="">
-          Register instead.
-        </a>
-      </div>
+
     </div>
     <br>
   </div>

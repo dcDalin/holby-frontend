@@ -165,7 +165,7 @@ $("document").ready(function() {
             $("#errorDiv")
               .slideDown("fast", function() {
                 $("#btn-submit").html(
-                  '<img src="ajax-loader.gif" style="margin: auto; width:30px;"> &nbsp; Refreshing...'
+                  '<img src="ajax-loader.gif" style="margin: auto; width:30px;">...'
                 );
                 $("#errorDiv").html(
                   '<div class="alert alert-success">' + data.message + "</div>"
@@ -180,9 +180,6 @@ $("document").ready(function() {
               })
               .delay(3000)
               .slideUp("fast");
-            setTimeout(function() {
-              location.reload(true);
-            }, 3000);
           } else if (data.status === "error") {
             $("#errorDiv")
               .slideDown("fast", function() {

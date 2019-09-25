@@ -111,6 +111,11 @@
     font-size: 13px;
     text-decoration: none;
   }
+
+  .form-footer {
+    text-align: center !important;
+    margin-bottom: 100px;
+  }
   </style>
 </head>
 
@@ -164,14 +169,16 @@
             </div>
           </div>
           <button type="submit" name="btn-submit" id="btn-submit" class="btn btn-primary">Register</button>
+
         </form>
       </div>
-      <a href="">
-        Register as Organization instead?
-      </a>
+      <div class="form-footer">
+        <a href="">
+          Register as Organization instead?
+        </a>
+      </div>
     </div>
     <br>
-  </div>
   </div>
 
 

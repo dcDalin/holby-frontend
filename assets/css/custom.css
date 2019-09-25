@@ -166,6 +166,11 @@ body {
   text-align: center;
 }
 
+.custom-top-social-info {
+  padding-top: 10px !important;
+  padding-right: 2% !important;
+  margin: 0px !important;
+}
 
 /* 
 
