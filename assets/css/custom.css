@@ -27,6 +27,55 @@ body {
   color: rgba(236, 240, 241, 0.7) !important;
 }
 
+/* Social Media Icons Here */
+.left-sidebar {
+  position: fixed;
+  top: 40%;
+  z-index: 999;
+  margin-left: 0px !important;
+}
+
+.left-sidebar ul {
+  border: none !important;
+  list-style: none !important;
+}
+
+.left-sidebar li {
+  width: 50px !important;
+  transition: 0.5s !important;
+  border: none !important;
+  opacity: 0.8 !important;
+}
+
+.custom-icon {
+  padding: 8px !important;
+  font-size: 25px !important;
+  color: white;
+}
+
+.left-sidebar li:hover {
+  width: 60px !important;
+  opacity: 1 !important;
+}
+
+.custom-facebook {
+  background-color: #3C5A99 !important;
+}
+
+.custom-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.custom-twitter {
+  background-color: #1DA1F2 !important;
+}
+
+/* End of Social Media Icons Here */
+
 .custom-app-title:hover {
   color: rgba(236, 240, 241, 1) !important;
 }
@@ -45,9 +94,8 @@ body {
 }
 
 .custom-carousel {
-  height: 500px !important;
+  height: 400px !important;
   object-fit: cover !important;
-  filter: brightness(40%);
 }
 
 .custom-section-margin-top {
@@ -94,18 +142,13 @@ body {
   background: #2ecc71;
 }
 
-.custom-card-body {}
-
 .custom-courses-card {
   border: none !important;
 }
 
-.custom-testimonial-img {
-  padding-top: 10px !important;
-}
-
 .slick-slide img {
-  height: 200px !important;
+  height: 100px !important;
+  width: 100px !important;
   object-fit: cover !important;
 }
 
@@ -171,6 +214,8 @@ body {
   padding-right: 2% !important;
   margin: 0px !important;
 }
+
+
 
 /* 
 

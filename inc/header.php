@@ -1,3 +1,17 @@
+<div class="left-sidebar ">
+  <ul class="collection right-align">
+    <li class="collection-item custom-facebook">
+      <a class="custom-icon" href="<?php echo $facebook; ?>"><i class="fa fa-facebook holby-white"></i></a>
+    </li>
+    <li class="collection-item custom-instagram">
+      <a class="custom-icon" href="<?php echo $instagram; ?>"><i class="fa fa-instagram holby-white"></i></a>
+    </li>
+    <li class="collection-item custom-twitter">
+      <a class="custom-icon" href="<?php echo $twitter; ?>"><i class="fa fa-twitter holby-white"></i></a>
+    </li>
+  </ul>
+</div>
+
 <header>
   <?php
     $id = 1;
@@ -8,7 +22,7 @@
     foreach($result as $row){
       $twitter = $row['twitter'];
       $facebook = $row['facebook'];
-      $instagram = $row['instagram'];
+      $instagram = $row['instagram']; 
       $email = $row['email'];
       $phoneNumber = $row['phoneNumber'];
     }
@@ -19,15 +33,9 @@
           class="fa fa-envelope holby-white"></i>&nbsp;<?php echo $email; ?></a>
 
     </li>
-    <li class="list-inline-item"><a class="holby-white" href="<?php echo $phoneNumber; ?>" target="_blank"><i
-          class="fa fa-phone holby-white"></i>&nbsp;<?php echo $phoneNumber; ?></a>
-
+    <li class="list-inline-item"><a class="holby-white" href="<?php echo $phoneNumber; ?>" target="_blank">
+      <i class="fa fa-phone holby-white"></i>&nbsp;<?php echo $phoneNumber; ?></a>
     </li>
-    <li class="list-inline-item"><a href="<?php echo $facebook; ?>"><i class="fa fa-facebook holby-white"></i></a></li>
-    <li class="list-inline-item"><a href="<?php echo $twitter; ?>"><i class="fa fa-twitter holby-white"></i></a></li>
-    <li class="list-inline-item"><a href="<?php echo $instagram; ?>"><i class="fa fa-instagram holby-white"></i></a>
-    </li>
-
   </ul>
 
 
@@ -43,20 +51,20 @@
       </a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link holby-white" href="about">About</a>
+          <a class="nav-link holby-white" href="about">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle holby-white" data-toggle="dropdown" data-target="dropdown_products"
             href="#">
-            Products
+            What we do
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdown_products">
-            <a href="courses" class="dropdown-item">Individual Courses</a>
-            <a href="courses" class="dropdown-item">Organizational Courses</a>
+            <a href="courses" class="dropdown-item">Products</a>
+            <a href="courses" class="dropdown-item">Services</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle holby-white" data-toggle="dropdown" data-target="dropdown_services"
             href="#">
             Services
@@ -66,22 +74,35 @@
             <a href="consultancy" class="dropdown-item">Consultancy</a>
             <a href="executive-coaching" class="dropdown-item">Executive Coaching</a>
           </div>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link holby-white" href="blog">Blog</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle holby-white" data-toggle="dropdown" data-target="dropdown_media" href="#">
-            Media
+            Multimedia
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdown_media">
-            <a class="dropdown-item">Something</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item">Something</a>
-            <a class="dropdown-item">Something</a>
+            <a class="dropdown-item">Photos</a>
+            <a class="dropdown-item">Videos</a>
+            <a class="dropdown-item">Soundcloud</a>
           </div>
         </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle holby-white" data-toggle="dropdown" data-target="dropdown_services"
+            href="#">
+            Contact Us
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown_services">
+            <a href="#" class="dropdown-item">Location</a>
+            <a href="#" class="dropdown-item">Phone Number</a>
+          </div>
+        </li>
+        
+        
         <li class="nav-item">
           <a class="nav-link holby-white" href="#">Store</a>
         </li>
